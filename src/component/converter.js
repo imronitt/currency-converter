@@ -12,6 +12,7 @@ class Converter extends React.Component {
       currencies: []
     };
   }
+  
   componentDidMount() {
     axios
       .get("https://api.openrates.io/latest")

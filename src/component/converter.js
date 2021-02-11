@@ -1,5 +1,10 @@
 import React from "react";
 import axios, { AxiosRequestConfig, AxiosPromise, AxiosResponse } from 'axios';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 import converter from "./converter.css";
 class Converter extends React.Component {
   constructor(props) {
@@ -9,9 +14,11 @@ class Converter extends React.Component {
       fromCurrency: "USD",
       toCurrency: "GBP",
       amount: 1,
+      amount1: 1,
       currencies: []
     };
   }
+
 
   componentDidMount() {
     axios
@@ -58,21 +65,47 @@ class Converter extends React.Component {
   };
   render() {
     return (
-      <div className="Converter">
-        <h2>
-          <span>Currency</span>Converter
-          <span role="img" aria-label="money">
-            &#x1f4b5;
-          </span>
-        </h2>
-        <div className="From">
-          <input
-            name="amount"
-            type="text"
-            value={this.state.amount}
-            onChange={event => this.setState({ amount: event.target.value })}
-          />
-          <select
+      // <div className="Converter">
+      //   <h2>
+      //     <span>Currency</span>Converter
+      //     <span role="img" aria-label="money">
+      //       &#x1f4b5;
+      //     </span>
+      //   </h2>
+      //   <div className="From">
+      //     <input
+      //       name="amount"
+      //       type="text"
+      //       value={this.state.amount}
+      //       onChange={event => this.setState({ amount: event.target.value })}
+      //     />
+      //     <select
+      //       name="from"
+      //       onChange={event => this.selectHandler(event)}
+      //       value={this.state.fromCurrency}
+      //     >
+      //       {this.state.currencies.map(cur => (
+      //         <option key={cur}>{cur}</option>
+      //       ))}
+      //     </select>
+      //     <select
+      //       name="to"
+      //       onChange={event => this.selectHandler(event)}
+      //       value={this.state.toCurrency}
+      //     >
+      //       {this.state.currencies.map(cur => (
+      //         <option key={cur}>{cur}</option>
+      //       ))}
+      //     </select>
+      //     <button onClick={this.convertHandler}>Convert</button>
+      //     {this.state.result && <h3>{this.state.result}</h3>}
+      //   </div>
+      // </div>
+      <div class="demo">
+        
+      <div class="Card1">
+   
+     <select
             name="from"
             onChange={event => this.selectHandler(event)}
             value={this.state.fromCurrency}
@@ -80,8 +113,36 @@ class Converter extends React.Component {
             {this.state.currencies.map(cur => (
               <option key={cur}>{cur}</option>
             ))}
+       
+
           </select>
-          <select
+
+          <input
+            name="amount"
+            type="text"
+            //value={this.state.result}
+            value={this.state.amount1}
+            //onChange={event => this.setState({ amount1: event.target.value })}
+            onChange={this.convertHandler}
+            //onChange={event => this.setState({ amount: event.target.value })}
+            //onChange={this.convertHandler,event => this.setState({ amount: event.target.value })}
+          />
+
+{/* <input
+            name="res"
+            type="text"
+            //value={this.state.result}
+            value={this.state.result}
+            //onChange={ event => this.setState({ amount1: event.target.value })}
+            //onChange={this.convertHandler}
+            //onChange={event => this.setState({ amount: event.target.value })}
+            //onChange={this.convertHandler,event => this.setState({ amount: event.target.value })}
+          /> */}
+  
+      </div>
+
+      <div class="Card2">
+      <select
             name="to"
             onChange={event => this.selectHandler(event)}
             value={this.state.toCurrency}
@@ -90,10 +151,20 @@ class Converter extends React.Component {
               <option key={cur}>{cur}</option>
             ))}
           </select>
-          <button onClick={this.convertHandler}>Convert</button>
-          {this.state.result && <h3>{this.state.result}</h3>}
-        </div>
+
+          <input
+            name="to"
+            type="text"
+            value={this.state.amount}
+            onChange={event => this.setState({ amount: event.target.value })}
+            //onChange={event => this.setState({ amount: event.target.value })}
+          />
+          
+
+
       </div>
+      </div>
+
     );
   }
 }

@@ -1,0 +1,61 @@
+.demo{
+
+    position: absolute;
+width: 1440px;
+height: 62px;
+left: 0px;
+top: 0px;
+
+/* #2B439C */
+background: #2B439C;
+}
+.Card1{
+
+    position: absolute;
+width: 436px;
+height: 293px;
+left: 720px;
+top: 270px;
+
+background: #F0F1F4;
+border-radius: 10px;
+}
+.Card2{
+    position: absolute;
+    width: 436px;
+    height: 293px;
+    left: 235px;
+    top: 270px;
+    
+    background: #F0F1F4;
+    border-radius: 10px;
+
+}
+
+input{
+     position: absolute;
+width: 361px;
+height: 62px;
+left: 38px;
+top: 150px;
+
+background: #ffffff;
+border: 1px solid #BFBFBF;
+box-sizing: border-box;
+border-radius: 6px; 
+font-size: large;
+}
+select{
+    position: absolute;
+width: 361px;
+height: 62px;
+left: 29px;
+top: 50px;
+
+/* #FFFFFF */
+background: #FFFFFF;
+border: 1px solid #BFBFBF;
+box-sizing: border-box;
+border-radius: 6px;
+font-size: large;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "axios";
+import axios, { AxiosRequestConfig, AxiosPromise, AxiosResponse } from 'axios';
 import converter from "./converter.css";
 class Converter extends React.Component {
   constructor(props) {
@@ -12,7 +12,7 @@ class Converter extends React.Component {
       currencies: []
     };
   }
-  
+
   componentDidMount() {
     axios
       .get("https://api.openrates.io/latest")

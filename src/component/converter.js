@@ -81,7 +81,7 @@ class Converter extends React.Component {
     return (
       
       <div class="demo">
-        <h1> Currency Converter</h1>
+        <h2> Currency Converter</h2>
         <h3> Please enter the amount you want to convert.</h3>
 
       <div class="Card1">

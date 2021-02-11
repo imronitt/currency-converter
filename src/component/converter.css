@@ -35,3 +35,75 @@ select {
 .Converter h2 span {
   color: rgb(11, 170, 59);
 }
+h3{
+  position: absolute;
+width: 445px;
+height: 21px;
+left: 235px;
+top: 187px;
+
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+/* Gray 1 */
+color: #333333;
+}
+
+h1{
+  position: absolute;
+width: 242px;
+height: 33px;
+left: 300px;
+top: 50px;
+
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 33px;
+/* identical to box height */
+
+/* Gray 1 */
+color: #333333;
+}
+table{
+  position: absolute;
+width: 921px;
+height: 781px;
+left: 235px;
+top: 216px;
+
+/* #FFFFFF */
+background: #FFFFFF;
+border: 1px solid #BFBFBF;
+box-sizing: border-box;
+border-radius: 6px;
+
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 240%;
+}
+
+h2{
+  position: absolute;
+width: 242px;
+height: 33px;
+left: 240px;
+top: 100px;
+
+font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 33px;
+/* identical to box height */
+
+/* Gray 1 */
+color: #333333;
+}

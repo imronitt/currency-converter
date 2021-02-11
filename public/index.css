@@ -1,4 +1,4 @@
-.demo{
+/* .demo{
 
     position: absolute;
 width: 1440px;
@@ -6,9 +6,8 @@ height: 62px;
 left: 0px;
 top: 0px;
 
-/* #2B439C */
 background: #2B439C;
-}
+} */
 .Card1{
 
     position: absolute;
@@ -59,3 +58,62 @@ box-sizing: border-box;
 border-radius: 6px;
 font-size: large;
 }
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #2B439C;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: #2B439C;
+  }
+  
+  .topnav a.active {
+    background-color: #6b80ce;
+    color: white;
+  }
+
+  .table{
+
+    position: absolute;
+    width: 921px;
+    height: 781px;
+    left: 235px;
+    top: 216px;
+    
+    
+    background: #FFFFFF;
+    border: 1px solid #BFBFBF;
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+
+  .currencyTable{
+    position: absolute;
+    width: 921px;
+    height: 781px;
+    left: 235px;
+    top: 170px;
+    
+    
+    background: #FFFFFF;
+    border: 1px solid #BFBFBF;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 240%;
+  }
